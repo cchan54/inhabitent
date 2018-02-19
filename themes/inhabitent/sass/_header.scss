@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+# Header Styles
+--------------------------------------------------------------*/
+
+.site-header {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid $color__background-hr;
+  background: hsla(0,0%,100%,.85);
+  
+.container-flex--row-nowrap {
+  margin: 0 auto;
+
+  }
+}
+
+/* Logo */
+
+.inhabitent-logo {
+  position: relative;
+  width: $logo__background-width;
+  height: $logo__background-height;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}

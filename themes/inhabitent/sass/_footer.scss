@@ -1,0 +1,18 @@
+/*--------------------------------------------------------------
+# Footer Styles
+--------------------------------------------------------------*/
+
+.site-footer {
+  background: url('../../images/dark-wood.png');
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: $content__size-width;
+}

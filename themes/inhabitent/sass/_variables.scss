@@ -1,0 +1,54 @@
+// Structure
+
+$base__space-unit: 1.5rem;
+
+// Logo
+$logo__background-width: 50px;
+$logo__background-height: 33px;
+$logo__background-url: '../../assets/images/logos/inhabitent-logo-tent.svg';
+
+// Navigation
+$nav__link-top-bottom--spacing: 0.5rem;
+
+// Content
+$content__size-width: 1120px;
+
+// Colors
+
+$color__background-body: #fff;
+$color__text-main: #404040;
+
+$color__background-screen: #f1f1f1;
+$color__text-screen: #21759b;
+
+$color__background-hr: #e1e1e1;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__border-abbr: #666;
+
+$color__link: #248A83;
+$color__link-visited: #248A83;
+$color__link-hover: #2f1339;
+$color__title-link-hover: #F0E4D1;
+
+$color__button-green-hover: #19625D;
+
+$color__footer-h3: #d99054;
+$color__footer-h1: #d99054;
+
+$color__pagination-button--current: #808080;
+
+$color__input-bg: #F4F4F4;
+
+
+// Typography
+
+$font__main: 'Merriweather';
+$font__entry-button: 'Novecento';
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-entry: 1.2;
+$font__line-height-pre: 1.6;
+$font__text-size-base: 16px;
+$font__footer-h3--letter-spacing: 2px;
