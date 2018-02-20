@@ -35,7 +35,7 @@
                     </div>
                     <div class="footer__logo">
 						<div class="footer__logo-container">
-							<a href="<?php echo inhabitent_the_url()?>"><img src="<?php echo inhabitent_the_url()?>/wp-content/themes/inhabitent/images/logos/inhabitent-logo-text.svg" class="footer__logo-img"/></a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-text.svg" class="footer__logo-img"/></a>
 						</div>
                     </div>
                 </div><!-- .site-info -->
@@ -46,6 +46,8 @@
                 </div>
             </footer><!-- #colophon -->
         </div><!-- #page -->
+
+
 
         <?php wp_footer(); ?>
 

@@ -35,10 +35,11 @@ function inhabitent_logo() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'inhabitent_logo' );
 
-add_filter( 'login_headerurl', 'custom_loginlogo_url' );
+
 function custom_loginlogo_url($url) {
    return get_home_url();
 }
+add_filter( 'login_headerurl', 'custom_loginlogo_url' );
 
 /**
 * Customize the title attritbute for the login logo link.
@@ -50,5 +51,3 @@ function inhabitent_login_title(){
 }
 
 add_filter('login_headertitle', 'inhabitent_login_title');
-
-?>
