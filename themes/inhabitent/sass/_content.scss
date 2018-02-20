@@ -15,10 +15,18 @@
 
 /* Posts and pages */
 
+.site-main {
+	display: inline-block;
+}
+
 .site-content {
-	// @extend .container-flex;
-	width: $content__size-width;
-	padding-top: 3rem;
+	width: 100%;
+	padding-top: 1rem;
+}
+
+.product-shop container {
+	position: center;	
+	justify-content: center;
 }
 
 .sticky {

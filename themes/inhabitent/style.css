@@ -530,12 +530,10 @@ a {
 --------------------------------------------------------------*/
 .alignleft {
   display: inline;
-  float: left;
   margin-right: 1.5rem; }
 
 .alignright {
   display: inline;
-  float: right;
   margin-left: 1.5rem; }
 
 .aligncenter {
@@ -577,9 +575,18 @@ a {
   display: flex; }
 
 /* Posts and pages */
+.site-main {
+  display: inline-block; }
+
 .site-content {
-  width: 1120px;
-  padding-top: 3rem; }
+  width: 100%;
+  padding-top: 1rem; }
+
+.product-shop container {
+  position: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .sticky {
   display: block; }
@@ -679,6 +686,22 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/* Hero Banner */
+.front-page-hero {
+  background: url("../../images/logos/inhabitent-logo-tent-white.svg"), url("../../images/home-hero.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 /*--------------------------------------------------------------
 # Footer Styles
 --------------------------------------------------------------*/
@@ -688,7 +711,10 @@ object {
   background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .site-info {
   display: -webkit-box;
@@ -711,8 +737,8 @@ object {
 /* Logo */
 .inhabitent-logo {
   position: relative;
-  width: 50px;
-  height: 33px;
+  width: 275px;
+  height: 275px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   top: 50%;
