@@ -225,42 +225,6 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
-@font-face {
-  font-family: 'Merriweather';
-  src: url("Merriweather-Light.woff2") format("woff2"), url("Merriweather-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: '.';
-  src: url("f702e338689dc3563a4d8782022c912a.woff2") format("woff2"), url("f702e338689dc3563a4d8782022c912a.woff") format("woff");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Merriweather';
-  src: url("Merriweather-BoldItalic.woff2") format("woff2"), url("Merriweather-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Merriweather';
-  src: url("Merriweather-LightItalic.woff2") format("woff2"), url("Merriweather-LightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Merriweather';
-  src: url("Merriweather-Bold.woff2") format("woff2"), url("Merriweather-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: '.';
-  src: url("9e02d529c7a5d362c4850731a46e4c20.woff2") format("woff2"), url("9e02d529c7a5d362c4850731a46e4c20.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -607,9 +571,16 @@ a {
 /* Basic */
 .container {
   width: 1120px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 /* Posts and pages */
+.site-content {
+  width: 1120px;
+  padding-top: 3rem; }
+
 .sticky {
   display: block; }
 
@@ -714,7 +685,13 @@ object {
 .site-footer {
   background: url("../../images/dark-wood.png");
   color: white;
-  background-color: black; }
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .site-info {
   display: -webkit-box;
@@ -732,10 +709,7 @@ object {
   width: 100%;
   padding: 0.5rem 0;
   border-bottom: 1px solid #e1e1e1;
-  position: fixed;
   background: rgba(255, 255, 255, 0.85); }
-  .site-header .container-flex--row-nowrap {
-    margin: 0 auto; }
 
 /* Logo */
 .inhabitent-logo {

@@ -8,7 +8,6 @@
 	width: $content__size-width;
 	margin: 0 auto;
 	display: flex;
-	// justify-content: space-between;
 }
 
 
@@ -17,7 +16,7 @@
 /* Posts and pages */
 
 .site-content {
-	@extend .container-flex;
+	// @extend .container-flex;
 	width: $content__size-width;
 	padding-top: 3rem;
 }
