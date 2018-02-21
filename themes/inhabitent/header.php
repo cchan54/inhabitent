@@ -31,4 +31,5 @@
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
+			<div class="custom-hero"></div>
 			<div id="content" class="site-content">

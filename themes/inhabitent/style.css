@@ -432,7 +432,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -447,19 +450,29 @@ a {
       left: -999rem;
       z-index: 99999; }
       .main-navigation ul ul ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 1.5rem;
         left: -999rem;
-        top: 0; }
+        z-index: 99999; }
+        .main-navigation ul ul ul ul {
+          left: -999rem;
+          top: 0; }
+        .main-navigation ul ul ul li:hover > ul,
+        .main-navigation ul ul ul li.focus > ul {
+          left: 100%; }
+        .main-navigation ul ul ul a {
+          width: 200px; }
       .main-navigation ul ul li:hover > ul,
       .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
+        left: auto; }
+    .main-navigation ul li {
+      float: left;
+      position: relative; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -688,7 +701,7 @@ object {
 /* Front page */
 /* Hero Banner */
 .front-page-hero {
-  background: url("../../images/logos/inhabitent-logo-tent-white.svg"), url("../../images/home-hero.jpg") no-repeat center;
+  background: url("../../images/home-hero.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -700,7 +713,8 @@ object {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-top: 50px; }
 
 /*--------------------------------------------------------------
 # Footer Styles
@@ -761,11 +775,15 @@ object {
   width: 100%;
   padding: 0.5rem 0;
   border-bottom: 1px solid #e1e1e1;
-  background: rgba(255, 255, 255, 0.85); }
+  position: fixed;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 999; }
+  .site-header .container-flex--row-nowrap {
+    margin: 0 auto; }
 
 /* Logo */
-.inhabitent-logo {
-  position: relative;
+.inhabitent-site-logo {
+  position: fixed;
   width: 275px;
   height: 275px;
   -webkit-transform: translate(-50%, -50%);

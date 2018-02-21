@@ -10,6 +10,9 @@ get_header(); ?>
 			<section class="front-page-hero">
 				<img src"<?php echo get_site_url(); ?>/images/logos/inhabitent-logo-full.svg/">
 			</section>
+			<div class="product-shop container">
+				<h2>Shop Stuff</h2>
+  </div>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
