@@ -51,3 +51,22 @@ function inhabitent_login_title(){
 }
 
 add_filter('login_headertitle', 'inhabitent_login_title');
+
+// changes header in about.php
+
+function about_page_hero() {
+	if (!is_page_template('page-templates/about.php') ) {
+		return;
+	}
+		$img = CFS () -> get('header-img');
+		if(!$img){
+			return;
+		}
+		$custom_css =
+			".page-template-about .entry-header{
+							background: url('$img');
+			}";
+	wp_add_inline_style( 'inhabitent-style', $custom_css);
+}
+
+add_action( 'wp_enqueue_scripts', 'about_page_hero' );

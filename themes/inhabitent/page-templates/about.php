@@ -18,6 +18,10 @@ get_header(); ?>
 	        </header><!-- .entry-header -->
 
       	<div class="entry-content">
+					<div class="about-content"><?php echo CFS () -> get('our_story'); ?></div>
+
+					<div class="about-content"><?php echo CFS () -> get('our_team'); ?></div>
+					
 	          <?php the_content(); ?>
 		        <?php
 			        wp_link_pages( array(

@@ -707,23 +707,52 @@ object {
 --------------------------------------------------------------*/
 .site-footer {
   background: url("../../images/dark-wood.png");
-  color: white;
-  background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.site-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
-  width: 1120px; }
+  color: white; }
+  .site-footer .footer__contact,
+  .site-footer .footer__business-hours,
+  .site-footer .footer__logo {
+    margin: 1.5rem 0; }
+  .site-footer a {
+    color: white; }
+    .site-footer a:hover {
+      text-decoration: underline; }
+  .site-footer h3 {
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Novecento';
+    font-size: 1.2rem;
+    color: #d99054;
+    letter-spacing: 2px; }
+  .site-footer .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 1120px;
+    margin: 0 auto; }
+    .site-footer .site-info .footer__contact {
+      width: 25%; }
+    .site-footer .site-info .footer__business {
+      width: 25%; }
+    .site-footer .site-info .footer__logo {
+      width: 50%; }
+      .site-footer .site-info .footer__logo .footer__logo-container {
+        margin-top: 1rem;
+        text-align: right; }
+        .site-footer .site-info .footer__logo .footer__logo-container img {
+          width: 50%; }
+  .site-footer .footer__copyright {
+    padding: 1.5rem 0;
+    font-family: 'Novecento'; }
+    .site-footer .footer__copyright .container {
+      text-align: center; }
+      .site-footer .footer__copyright .container p {
+        margin: 0; }
+  .site-footer .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 /*--------------------------------------------------------------
 # Header Styles
