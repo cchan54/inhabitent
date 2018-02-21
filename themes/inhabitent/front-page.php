@@ -12,7 +12,7 @@ get_header(); ?>
 			</section>
 			<div class="product-shop container">
 				<h2>Shop Stuff</h2>
-  </div>
+  		</div>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>

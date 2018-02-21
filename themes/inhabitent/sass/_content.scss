@@ -7,7 +7,19 @@
 .container {
 	width: $content__size-width;
 	margin: 0 auto;
-	display: flex;
+
+	// Flex container
+	&-flex {
+		@extend .container;
+			display: flex;
+			justify-content: space-between;
+
+		// row and no wrap
+		&--row-nowrap {
+			@extend .container-flex;
+			flex-flow: row nowrap;
+		}
+	}
 }
 
 
@@ -16,7 +28,9 @@
 /* Posts and pages */
 
 .site-main {
-	display: inline-block;
+	display: block;
+	align-content: center;
+	justify-content: center;
 }
 
 .site-content {
