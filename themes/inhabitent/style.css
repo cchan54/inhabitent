@@ -240,6 +240,78 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Novecento';
+  src: url("../../fonts/61322b6c62729a0b6fe7fa1336b2668e.woff2") format("woff2"), url("../../fonts/61322b6c62729a0b6fe7fa1336b2668e.woff") format("woff"), url("../../fonts/61322b6c62729a0b6fe7fa1336b2668e.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../../fonts/74282f37cf98accecbfec8b4b02c48d1.woff2") format("woff2"), url("../../fonts/74282f37cf98accecbfec8b4b02c48d1.woff") format("woff"), url("../../fonts/74282f37cf98accecbfec8b4b02c48d1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../../fonts/novecento_sans_widenormal.woff2") format("woff2"), url("../../fonts/novecento_sans_widenormal.woff") format("woff"), url("../../fonts/novecento_sans_widenormal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../../fonts/novecento_sans_widedemibold.woff2") format("woff2"), url("../../fonts/novecento_sans_widedemibold.woff") format("woff"), url("../../fonts/novecento_sans_widedemibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../../fonts/6b62bb03c1764c736079d5bff35220a2.woff2") format("woff2"), url("../../fonts/6b62bb03c1764c736079d5bff35220a2.woff") format("woff"), url("../../fonts/6b62bb03c1764c736079d5bff35220a2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../../fonts/376d6d8bff8acb5d3192e3a71fb394b6.woff2") format("woff2"), url("../../fonts/376d6d8bff8acb5d3192e3a71fb394b6.woff") format("woff"), url("../../fonts/376d6d8bff8acb5d3192e3a71fb394b6.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../../fonts/f83c3c1d48fd81e309a52a893b56bd47.woff2") format("woff2"), url("../../fonts/f83c3c1d48fd81e309a52a893b56bd47.woff") format("woff"), url("../../fonts/f83c3c1d48fd81e309a52a893b56bd47.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../../fonts/fa53ddce0e9e29253c20a5d59e5ed158.woff2") format("woff2"), url("../../fonts/fa53ddce0e9e29253c20a5d59e5ed158.woff") format("woff"), url("../../fonts/fa53ddce0e9e29253c20a5d59e5ed158.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../fonts/Merriweather-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -782,32 +854,50 @@ object {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-
-.product-type-block-wrapper {
-  width: 260px;
-  height: 260px;
-  padding: 10px;
-  border-top: 10px;
-  border-top-color: black; }
-  .product-type-block-wrapper img {
-    background-color: lightgreen;
-    width: 70px;
-    height: 70px; }
-  .product-type-block-wrapper p {
-    display: block; }
-  .product-type-block-wrapper a.btn {
-    background: #248a83;
-    border: none;
-    border-radius: 0;
-    color: #fff;
-    cursor: pointer;
-    font-family: Novecento Sans Web,sans-serif;
-    font-size: 14.4px;
-    font-size: .9rem;
-    line-height: 1;
-    padding: .75rem 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase; }
+  .product-type-blocks .product-type-block-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 265px;
+    padding: 12px;
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    margin: 0; }
+    .product-type-blocks .product-type-block-wrapper img {
+      width: 70px;
+      height: 70px; }
+    .product-type-blocks .product-type-block-wrapper p {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .product-type-blocks .product-type-block-wrapper a.btn {
+      background: #248a83;
+      width: 180px;
+      height: 40px;
+      color: #fff;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      cursor: pointer;
+      font-family: Novecento Sans Web,sans-serif;
+      font-size: 14.4px;
+      font-size: .9rem;
+      line-height: 1;
+      padding: .75rem 1.5rem;
+      text-transform: uppercase; }
 
 /*--------------------------------------------------------------
 # Footer Styles
