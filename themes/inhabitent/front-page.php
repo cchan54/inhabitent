@@ -69,7 +69,7 @@
 									<div class="entry-meta">
 								<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_on(); ?>
 							</div><!-- .entry-meta -->	
-																				
+
 						<h3><a class="journal-title" href="<?php echo get_post_permalink() ?>"><?php the_title(); ?></a></h3>
 																				
 							</div><!-- .entry-wrapper -->
