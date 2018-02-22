@@ -22,15 +22,16 @@
 	}
 }
 
-
-
-
 /* Posts and pages */
 
 .site-main {
 	display: block;
 	align-content: center;
 	justify-content: center;
+
+	.product-type-block-wrapper{
+		border: 10px;
+	}
 }
 
 .site-content {
@@ -77,6 +78,10 @@
 .archive .format-aside .entry-title {
 	display: none;
 }
+
+/* Product Types */
+
+
 
 /* Comments */
 

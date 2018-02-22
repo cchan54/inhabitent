@@ -26,6 +26,17 @@ a {
 
 /* Menus */
 
+.search-expanded {
+	visibility: visible !important;
+	width: 200px !important;
+	transition: width 0.5s ease-in-out;
+}
+
+.search-collapse {
+	width: 1px !important;
+	transition: width 0.5s ease-in-out;
+}
+
 .main-navigation {
 	clear: both;
 	display: flex;
@@ -33,14 +44,15 @@ a {
 	justify-content: flex-end;
 
 	ul {
-		display: none;
+		display: inline-block;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		margin-right: $base__space-unit;
 
 		ul {
+			display: flex;
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
 			position: absolute;
 			top: $base__space-unit;
 			left: -999rem;
@@ -77,7 +89,6 @@ a {
 			 }
 	}
 	li {
-		float: left;
 		position: relative;
 		}
 
@@ -85,6 +96,8 @@ a {
 	a {
 		display: block;
 		text-decoration: none;
+		font-family: 'Novecento';
+		text-transform: uppercase;
 	}
 }
 

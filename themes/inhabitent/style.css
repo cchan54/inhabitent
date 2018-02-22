@@ -43,6 +43,21 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Archives
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+.link-button {
+  background: #fff;
+  border: 1px solid #000;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  font-family: "Novecento";
+  font-size: 0.9rem;
+  line-height: 1; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -427,6 +442,17 @@ a {
     outline: 0; }
 
 /* Menus */
+.search-expanded {
+  visibility: visible !important;
+  width: 200px !important;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out; }
+
+.search-collapse {
+  width: 1px !important;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out; }
+
 .main-navigation {
   clear: both;
   display: -webkit-box;
@@ -437,14 +463,17 @@ a {
       -ms-flex-pack: end;
           justify-content: flex-end; }
   .main-navigation ul {
-    display: none;
+    display: inline-block;
     list-style: none;
     margin: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    margin-right: 1.5rem; }
     .main-navigation ul ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
       position: absolute;
       top: 1.5rem;
       left: -999rem;
@@ -471,11 +500,12 @@ a {
       .main-navigation ul ul li.focus > ul {
         left: auto; }
     .main-navigation ul li {
-      float: left;
       position: relative; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: 'Novecento';
+    text-transform: uppercase; }
 
 /* Small menu. */
 .menu-toggle,
@@ -604,6 +634,8 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .site-main .product-type-block-wrapper {
+    border: 10px; }
 
 .site-content {
   width: 100%;
@@ -642,6 +674,7 @@ a {
 .archive .format-aside .entry-title {
   display: none; }
 
+/* Product Types */
 /* Comments */
 .comment-content a {
   word-wrap: break-word; }
@@ -712,10 +745,14 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+/*  Front Page Styles  */
+.product-shop.container, .product-shop.container-flex, .product-shop.container-flex--row-nowrap, .recent-journals.container, .recent-journals.container-flex, .recent-journals.container-flex--row-nowrap {
+  margin-bottom: 4.5rem; }
+
 /* Hero Banner */
 .front-page-hero {
-  background: url("../../images/home-hero.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/home-hero.jpg") no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -728,7 +765,47 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 50px; }
+  margin-top: 25px; }
+  .front-page-hero img {
+    background: url("../../images/logos/inhabitent-logo-full.svg") no-repeat center;
+    height: 275px;
+    width: 275px; }
+
+/* Shop Stuff Categories */
+.product-info.container, .product-info.container-flex, .product-info.container-flex--row-nowrap {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center; }
+  .product-info.container h2, .product-info.container-flex h2, .product-info.container-flex--row-nowrap h2 {
+    font-family: 'Novecento';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: normal;
+    letter-spacing: 4px;
+    margin: 3.75rem 0; }
+
+.product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.product-type-block-wrapper {
+  width: 260px;
+  height: 260px;
+  padding: 10px;
+  border-top: 10px;
+  border-top-color: black; }
+  .product-type-block-wrapper img {
+    background-color: lightgreen;
+    width: 70px;
+    height: 70px; }
 
 /*--------------------------------------------------------------
 # Footer Styles
@@ -767,6 +844,7 @@ object {
       width: 50%; }
       .site-footer .site-info .footer__logo .footer__logo-container {
         margin-top: 1rem;
+        padding: 1rem;
         text-align: right; }
         .site-footer .site-info .footer__logo .footer__logo-container img {
           width: 50%; }

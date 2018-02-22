@@ -17,9 +17,9 @@
 								<div class="footer-contact"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></div>
 								<div class="footer-contact"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:778-456-7891">778-456-7891</a></div>
 								<div class="footer-container">
-								<div class="footer-contact"><i class="fa fa-facebook-square" aria-hidden="true"></i></div>
-								<div class="footer-contact"><i class="fa fa-twitter-square" aria-hidden="true"></i></div>
-								<div class="footer-contact"><i class="fa fa-google-plus-square" aria-hidden="true"></i></div>
+								<div class="footer-contact"><i class="fab fa-facebook-square" aria-hidden="true"></i></div>
+								<div class="footer-contact"><i class="fab fa-twitter-square" aria-hidden="true"></i></div>
+								<div class="footer-contact"><i class="fab fa-google-plus-square" aria-hidden="true"></i></div>
 							</div>
 						</div>
                     </div>
