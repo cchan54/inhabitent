@@ -5,20 +5,40 @@
 /* Basic */
 
 .container {
-	width: $content__size-width;
+	display: flex;
+	width: 100%;
 	margin: 0 auto;
+	justify-content: center;
+}
 
-	// Flex container
-	&-flex {
-		@extend .container;
-			display: flex;
-			justify-content: space-between;
+/* About */
 
-		// row and no wrap
-		&--row-nowrap {
-			@extend .container-flex;
-			flex-flow: row nowrap;
-		}
+h1 {
+	color: #fff;
+	font-family: 'Novecento';
+	text-transform: uppercase;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3rem;
+}
+
+.entry-header {
+	justify-content: center;
+	align-content: center;
+}
+
+.entry-content {
+	justify-content: center;
+	max-width: 800px;
+	margin: $base__space-unit * 3 auto;
+	line-height: 1.75rem;
+
+h2 {
+	text-align: center;
+	font-size: 2.1rem;
+	font-family: 'Novecento';
 	}
 }
 

@@ -55,7 +55,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   padding: 0.75rem 1.5rem;
   text-transform: uppercase;
   font-family: "Novecento";
-  font-size: 0.9rem;
   line-height: 1; }
 
 html {
@@ -669,21 +668,46 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Basic */
-.container, .container-flex, .container-flex--row-nowrap {
-  width: 1120px;
-  margin: 0 auto; }
-  .container-flex, .container-flex--row-nowrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .container-flex--row-nowrap {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap; }
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/* About */
+h1 {
+  color: #fff;
+  font-family: 'Novecento';
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 3rem; }
+
+.entry-header {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+
+.entry-content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 800px;
+  margin: 4.5rem auto;
+  line-height: 1.75rem; }
+  .entry-content h2 {
+    text-align: center;
+    font-size: 2.1rem;
+    font-family: 'Novecento'; }
 
 /* Posts and pages */
 .site-main {
@@ -805,7 +829,7 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /*  Front Page Styles  */
-.product-shop.container, .product-shop.container-flex, .product-shop.container-flex--row-nowrap, .recent-journals.container, .recent-journals.container-flex, .recent-journals.container-flex--row-nowrap {
+.product-shop.container, .recent-journals.container {
   margin-bottom: 4.5rem; }
 
 /* Hero Banner */
@@ -828,17 +852,18 @@ object {
   .front-page-hero img {
     background: url("../../images/logos/inhabitent-logo-full.svg") no-repeat center;
     height: 275px;
-    width: 275px; }
+    width: 275px;
+    border: none; }
 
 /* Shop Stuff Categories */
-.product-info.container, .product-info.container-flex, .product-info.container-flex--row-nowrap {
+.product-info.container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center; }
-  .product-info.container h2, .product-info.container-flex h2, .product-info.container-flex--row-nowrap h2 {
+  .product-info.container h2 {
     font-family: 'Novecento';
     text-transform: uppercase;
     text-align: center;
@@ -899,6 +924,69 @@ object {
       padding: .75rem 1.5rem;
       text-transform: uppercase; }
 
+/* --------- Journals -------------*/
+.latest-entries h2 {
+  text-align: center;
+  font-family: 'Novecento';
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 3.75rem; }
+
+.latest-entries h3 {
+  font-family: 'Novecento';
+  margin: none;
+  line-height: 1.5em; }
+
+.latest-entries a {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.most-recent-journals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 10rem;
+  padding-right: 10rem; }
+
+.journal-recent-block-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  border: 1px solid #d1d1d1;
+  width: 32.5%; }
+  .journal-recent-block-item a {
+    font-size: 1.4rem; }
+  .journal-recent-block-item img {
+    height: 250px;
+    border-bottom: 5px solid #d1d1d1; }
+  .journal-recent-block-item .entry-wrapper {
+    height: 100%;
+    padding: 0.75rem; }
+    .journal-recent-block-item .entry-wrapper .entry-meta {
+      font-size: 0.75rem; }
+  .journal-recent-block-item .entry-readmore {
+    width: 40%;
+    margin: 0.75rem;
+    padding: 0.75rem;
+    text-align: center; }
+    .journal-recent-block-item .entry-readmore a {
+      font-size: 14px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+
 /*--------------------------------------------------------------
 # Footer Styles
 --------------------------------------------------------------*/
@@ -933,19 +1021,19 @@ object {
     .site-footer .site-info .footer__business {
       width: 25%; }
     .site-footer .site-info .footer__logo {
-      width: 50%; }
+      width: 50%;
+      text-align: right; }
       .site-footer .site-info .footer__logo .footer__logo-container {
         margin-top: 1rem;
-        padding: 1rem;
         text-align: right; }
         .site-footer .site-info .footer__logo .footer__logo-container img {
           width: 50%; }
   .site-footer .footer__copyright {
     padding: 1.5rem 0;
     font-family: 'Novecento'; }
-    .site-footer .footer__copyright .container, .site-footer .footer__copyright .container-flex, .site-footer .footer__copyright .container-flex--row-nowrap {
+    .site-footer .footer__copyright .container {
       text-align: center; }
-      .site-footer .footer__copyright .container p, .site-footer .footer__copyright .container-flex p, .site-footer .footer__copyright .container-flex--row-nowrap p {
+      .site-footer .footer__copyright .container p {
         margin: 0; }
   .site-footer .footer-container {
     display: -webkit-box;
