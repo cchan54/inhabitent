@@ -13,6 +13,7 @@
 
 /* About */
 
+.page-template-about {
 h1 {
 	color: #fff;
 	font-family: 'Novecento';
@@ -22,6 +23,17 @@ h1 {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 3rem;
+	}
+}
+
+.page-template-default {
+	h1 {
+		display: none;
+	}
+}
+
+.entry-content {
+	justify-content: center;
 }
 
 .entry-header {
@@ -56,7 +68,6 @@ h2 {
 
 .site-content {
 	width: 100%;
-	padding-top: 1rem;
 }
 
 .product-shop container {

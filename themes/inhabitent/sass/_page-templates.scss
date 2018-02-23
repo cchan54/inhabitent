@@ -18,23 +18,24 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 25px;
 
 		img {
-			background: url('../../images/logos/inhabitent-logo-full.svg') no-repeat center;
+			// background: url('../../images/logos/inhabitent-logo-full.svg') no-repeat center;
 			height: 275px;
 			width: 275px;
-			border: none;
 		}
 }
 
 /* Shop Stuff Categories */
 
-.product-info.container {
+.product-info-container {
 	justify-content: center;
 	align-content: center;
 	text-align: center;
-	// width: $content__size-width;
+	width: 100%;
+	padding-left: 10rem;
+	padding-right: 10rem;
+
 
 	h2 {
 		font-family: 'Novecento';

@@ -679,7 +679,7 @@ a {
           justify-content: center; }
 
 /* About */
-h1 {
+.page-template-about h1 {
   color: #fff;
   font-family: 'Novecento';
   text-transform: uppercase;
@@ -689,6 +689,14 @@ h1 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 3rem; }
+
+.page-template-default h1 {
+  display: none; }
+
+.entry-content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .entry-header {
   -webkit-box-pack: center;
@@ -721,8 +729,7 @@ h1 {
     border: 10px; }
 
 .site-content {
-  width: 100%;
-  padding-top: 1rem; }
+  width: 100%; }
 
 .product-shop container {
   position: center;
@@ -847,23 +854,23 @@ object {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  margin-top: 25px; }
+          align-items: center; }
   .front-page-hero img {
-    background: url("../../images/logos/inhabitent-logo-full.svg") no-repeat center;
     height: 275px;
-    width: 275px;
-    border: none; }
+    width: 275px; }
 
 /* Shop Stuff Categories */
-.product-info.container {
+.product-info-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  text-align: center; }
-  .product-info.container h2 {
+  text-align: center;
+  width: 100%;
+  padding-left: 10rem;
+  padding-right: 10rem; }
+  .product-info-container h2 {
     font-family: 'Novecento';
     text-transform: uppercase;
     text-align: center;
@@ -1046,9 +1053,7 @@ object {
 .site-header {
   width: 100%;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #e1e1e1;
   position: fixed;
-  background: rgba(255, 255, 255, 0.85);
   z-index: 999; }
   .site-header .container-flex--row-nowrap {
     margin: 0 auto; }
