@@ -11,33 +11,33 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-
 			<header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
+			<div class="product-grid">
+				<?php /* Start the Loop */ ?>
+				<div class="container">
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+					<?php
+						get_template_part( 'template-parts/content' );
+					?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+				<?php endwhile; ?>
 
-			<?php endwhile; ?>
+				<?php the_posts_navigation(); ?>
 
-			<?php the_posts_navigation(); ?>
+			<?php else : ?>
 
-		<?php else : ?>
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
+			<?php endif; ?>
+		</div> <!--container-->
+		</div> <!--end of grid-->
+		</main> <!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

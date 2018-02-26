@@ -54,19 +54,57 @@ h2 {
 	}
 }
 
-/* Product Stuff Page */
+/* Product Grid Page */
 
-.product-wrapper {
-	margin-top: $base__space-unit * 2; 
+.page-header {
+	width: 100%;
+	
+	h1 {
+	text-align: center;
+	}
+}
 
-	.product-picture {
-		width: 50%;
-		margin-right: $base__space-unit * 2;
+.product-grid {
+	background-color: tomato;
+	display: grid;
+	height: 550px;
+
+	p {
+		visibility: hidden;
 	}
 
-	.entry-content {
+	a {
+		color: black;
+
+		a:visited{
+			color: black;
+		}
+	}
+}
+
+
+/* Single Product Page */
+
+.product-container {
+	display: flex;
+	width: 100%;
+	height: 500px;
+	justify-content: center;
+	margin-top: 2rem;
+
+.product-content-wrapper {
+	display: flex;
+
+	.product-picture {
+		align-content: center;
 		width: 50%;
-		margin: 0;
+		// height: 360px;
+		margin-right: 3rem;
+}
+
+	.entry-content {
+		width: 540px;
+		margin-left: 3rem;
 
 		h1, .product-price {
 			font-family: 'Novecento';
@@ -88,57 +126,24 @@ h2 {
 			margin-bottom: 1rem;
 		}
 	}
-
+}
 }
 
-/* Single Product Page */
+.social-buttons {
+	width: 100%;
 
-// .product-container {
-// 	background-color: tomato;
-// 	display: flex;
-// 	margin-top: 100px;
+	button {
+		@extend .link-button;
 
-// .product-wrapper {
-// 	background-color: skyblue;
-// 	display: flex;
+		i {
+			margin-right: $base__space-unit / 2;
+		}
+	}
+}
 
-// 	.product-picture {
-// 		width: 50%;
-// 		margin-right: $base__space-unit * 2;
-// 	}
-
-// 	.entry-content {
-// 		width: 50%;
-// 		margin: 0;
-
-// 		h1, .product-price {
-// 			font-family: 'Novecento';
-// 			text-transform: uppercase;
-// 		}
-
-// 		.product-price {
-// 			font-size: 1.8rem;
-// 			margin: 0.5rem 0 $base__space-unit 0;
-// 		}
-		
-// 		h1 {
-// 			margin: 0;
-// 			color: $color__footer-h1;
-// 			font-size: 2.4rem;
-// 		}
-
-// 		&__p-product {
-// 			margin-bottom: 1rem;
-// 		}
-// 	}
-// }
-// }
 
 /* Posts and pages */
 
-.site-header {
-	background: transparent;
-}
 
 .site-main {
 	display: block;
@@ -196,7 +201,7 @@ h2 {
 
 /* Journal Page */
 
-.content-area {
+.main-journal-content {
 	padding: 3rem 5% 3rem 9rem;
 	width: 73%;
 	border-right: 1px solid $color__background-hr;
@@ -219,13 +224,6 @@ h2 {
 		p {
 			width: 760px;
 		}
-
-		// body:not(.search):not(.home):not(.page-template-default):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.page-template-about) .entry-header {
-		// 	position: relative;
-		
-		// 	img {
-		// 		width: 100%;
-		// 	}
 
 		.entry-title, .entry-meta {
 			position: relative;

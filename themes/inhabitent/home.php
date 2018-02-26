@@ -6,6 +6,7 @@
  */
 get_header(); ?>
     <div id="primary" class="content-area">
+			<div class="main-journal-content"
         <main id="main" class="site-main" role="main">
 				<?php if ( is_home() && ! is_front_page() ) : ?>
 					<header>
@@ -22,7 +23,8 @@ get_header(); ?>
 
 				<?php the_posts_navigation(); ?>
 		
-        </main><!-- #main -->
+				</main><!-- #main -->
+			</div> <!--main-journal-content-->
 	</div><!-- #primary -->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
