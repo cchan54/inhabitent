@@ -54,6 +54,81 @@ h2 {
 	}
 }
 
+/* Product Stuff Page */
+
+.product-wrapper {
+	margin-top: $base__space-unit * 2; 
+
+	.product-picture {
+		width: 50%;
+		margin-right: $base__space-unit * 2;
+	}
+
+	.entry-content {
+		width: 50%;
+		margin: 0;
+
+		h1, .product-price {
+			font-family: 'Novecento';
+			text-transform: uppercase;
+		}
+
+		.product-price {
+			font-size: 1.8rem;
+			margin: 0.5rem 0 $base__space-unit 0;
+		}
+		
+		h1 {
+			margin: 0;
+			color: $color__footer-h1;
+			font-size: 2.4rem;
+		}
+
+		&__p-product {
+			margin-bottom: 1rem;
+		}
+	}
+
+}
+
+/* Single Product Page */
+
+.product-wrapper {
+	background-color: skyblue;
+	display: flex;
+
+	.product-picture {
+		width: 50%;
+		margin-right: $base__space-unit * 2;
+	}
+
+	.entry-content {
+		width: 50%;
+		margin: 0;
+
+		h1, .product-price {
+			font-family: 'Novecento';
+			text-transform: uppercase;
+		}
+
+		.product-price {
+			font-size: 1.8rem;
+			margin: 0.5rem 0 $base__space-unit 0;
+		}
+		
+		h1 {
+			margin: 0;
+			color: $color__footer-h1;
+			font-size: 2.4rem;
+		}
+
+		&__p-product {
+			margin-bottom: 1rem;
+		}
+	}
+
+}
+
 /* Posts and pages */
 
 .site-main {

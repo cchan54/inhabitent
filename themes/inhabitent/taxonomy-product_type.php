@@ -13,23 +13,22 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+                <h1 class="product-tax-title"><?php single_term_title(); ?></h1>
+                <div class="product-tax-description"><?php echo term_description(); ?></div>
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+            <?php /* Start the Loop */ ?>
+            
+            <div class="product-archive-grid">
+                <?php while ( have_posts() ) : the_post(); ?>
+                    <div class="product-grid-item">
+                        <?php
+                            get_template_part( 'template-parts/product', 'archive' );
+                        ?>
+                    </div>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
+                <?php endwhile; ?>
+            </div>
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
@@ -39,5 +38,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

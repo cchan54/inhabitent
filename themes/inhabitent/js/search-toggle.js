@@ -9,7 +9,6 @@
 
   $('.main-navigation .search-field').on('blur', function(){
 
-    alert('dhelaidw');  
 
   });
 

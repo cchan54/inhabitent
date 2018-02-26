@@ -5,10 +5,10 @@
 /* Links */
 
 a {
-	color: $color__link;
+	color: white;
 
 	&:visited {
-		color: $color__link-visited;
+		color: white;
 	}
 	&:hover,
 	&:focus,
@@ -39,10 +39,15 @@ a {
 
 .main-navigation {
 	display: flex;
+	height: 50px;
 	width: 100%;
 	padding: 2px;
-	justify-content: flex-end;
+	justify-content: space-between;
 	background-color: transparent;
+
+	img {
+		position: relative;
+	}
 
 	ul {
 		display: inline-flex;
@@ -83,15 +88,27 @@ a {
 	li {
 		position: relative;
 		}
+	} 
 
+	.site-branding {
+
+		width: 50px;
+		height: 50px
 	}
+
+	.site-title {
+		width: 50px;
+		height: 50px;
+	}
+	// <-----endof main nav ------>
+
 	a {
 		display: flex;
 		text-decoration: none;
 		font-family: 'Novecento';
 		text-transform: uppercase;
 		padding-right: 10px;
-		color: black;
+		color: white;
 	}
 
 
