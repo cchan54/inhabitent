@@ -5,10 +5,10 @@
 /* Links */
 
 a {
-	color: white;
+	color: $color__link;
 
 	&:visited {
-		color: white;
+		color: $color__link-visited;
 	}
 	&:hover,
 	&:focus,
@@ -26,24 +26,12 @@ a {
 
 /* Menus */
 
-// .search-expanded {
-// 	visibility: visible !important;
-// 	width: 200px !important;
-// 	transition: width 0.5s ease-in-out;
-// }
-
-// .search-collapse {
-// 	width: 1px !important;
-// 	transition: width 0.5s ease-in-out;
-// }
-
 .main-navigation {
 	display: flex;
 	height: 50px;
 	width: 100%;
 	padding: 2px;
 	justify-content: space-between;
-	background-color: transparent;
 
 	img {
 		position: relative;

@@ -511,9 +511,9 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: white; }
+  color: #248A83; }
   a:visited {
-    color: white; }
+    color: #248A83; }
   a:hover, a:focus, a:active {
     color: #2f1339; }
   a:focus {
@@ -531,8 +531,7 @@ a {
   padding: 2px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: transparent; }
+          justify-content: space-between; }
   .main-navigation img {
     position: relative; }
   .main-navigation ul {
@@ -760,31 +759,10 @@ a {
       margin-bottom: 1rem; }
 
 /* Single Product Page */
-.product-wrapper {
-  background-color: skyblue;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .product-wrapper .product-picture {
-    width: 50%;
-    margin-right: 3rem; }
-  .product-wrapper .entry-content {
-    width: 50%;
-    margin: 0; }
-    .product-wrapper .entry-content h1, .product-wrapper .entry-content .product-price {
-      font-family: 'Novecento';
-      text-transform: uppercase; }
-    .product-wrapper .entry-content .product-price {
-      font-size: 1.8rem;
-      margin: 0.5rem 0 1.5rem 0; }
-    .product-wrapper .entry-content h1 {
-      margin: 0;
-      color: #d99054;
-      font-size: 2.4rem; }
-    .product-wrapper .entry-content__p-product {
-      margin-bottom: 1rem; }
-
 /* Posts and pages */
+.site-header {
+  background: transparent; }
+
 .site-main {
   display: block;
   -ms-flex-line-pack: center;
@@ -831,7 +809,53 @@ a {
 .archive .format-aside .entry-title {
   display: none; }
 
-/* Product Types */
+/* Journal Page */
+.content-area {
+  padding: 3rem 5% 3rem 9rem;
+  width: 73%;
+  border-right: 1px solid #e1e1e1; }
+  .content-area .entry-header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .content-area .entry-header a {
+      background: #248A83;
+      width: 500px;
+      color: white;
+      padding: .5rem;
+      font-size: 2.1rem; }
+      .content-area .entry-header a a:visited {
+        color: #248A83; }
+    .content-area .entry-header p {
+      width: 760px; }
+    .content-area .entry-header .entry-title, .content-area .entry-header .entry-meta {
+      position: relative;
+      background-color: #248A83;
+      color: #fff;
+      font-family: Novecento,sans-serif; }
+      .content-area .entry-header .entry-title a, .content-area .entry-header .entry-meta a {
+        color: #fff;
+        text-decoration: none; }
+        .content-area .entry-header .entry-title a:hover, .content-area .entry-header .entry-meta a:hover {
+          color: #fff9c0; }
+    .content-area .entry-header .entry-title {
+      top: 0;
+      left: 0;
+      padding: 0.50rem 1.5rem;
+      width: 75%;
+      margin-top: 2.25rem;
+      font-size: 2.35rem;
+      line-height: 1.2; }
+    .content-area .entry-header .entry-meta {
+      bottom: 0;
+      right: 0;
+      margin-bottom: 0.4rem;
+      padding: 0.25rem 1.5rem;
+      width: 50%; }
+    .content-area .entry-header img {
+      width: 760px;
+      height: 520px; }
+
 /* Comments */
 .comment-content a {
   word-wrap: break-word; }
@@ -983,10 +1007,10 @@ object {
           -ms-flex-pack: center;
               justify-content: center; }
     .product-type-blocks .product-type-block-wrapper a.btn {
+      color: white;
       background: #248a83;
       width: 150px;
       height: 40px;
-      color: white;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -999,39 +1023,40 @@ object {
       text-transform: uppercase; }
 
 /* --------- Journals -------------*/
-.most-recent-journals {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.journal-recent-block-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  border: 1px solid #d1d1d1;
-  width: 32.5%; }
-  .journal-recent-block-item img {
-    height: 250px;
-    border-bottom: 5px solid #d1d1d1; }
-  .journal-recent-block-item .entry-wrapper {
-    height: 100%;
-    padding: 0.75rem; }
-    .journal-recent-block-item .entry-wrapper .entry-meta {
-      font-size: 0.75rem; }
-  .journal-recent-block-item .entry-readmore {
-    width: 40%;
-    margin: 0.75rem; }
+.latest-entries {
+  width: 100%; }
+  .latest-entries .most-recent-journals {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .latest-entries .journal-recent-block-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    border: 1px solid #d1d1d1;
+    width: 32.5%; }
+    .latest-entries .journal-recent-block-item img {
+      height: 250px;
+      border-bottom: 5px solid #d1d1d1; }
+    .latest-entries .journal-recent-block-item .entry-wrapper {
+      height: 100%;
+      padding: 0.75rem; }
+      .latest-entries .journal-recent-block-item .entry-wrapper .entry-meta {
+        font-size: 0.75rem; }
+    .latest-entries .journal-recent-block-item .entry-readmore {
+      width: 40%;
+      margin: 0.75rem; }
 
 /* Find Us Page */
 .entry-content {
@@ -1121,7 +1146,9 @@ h2 {
   width: 100%;
   height: 50px;
   padding: 0.5rem 0;
-  position: fixed;
+  position: relative;
+  clear: both;
+  background: transparent;
   z-index: 999; }
   .site-header .container-flex--row-nowrap {
     margin: 0 auto; }

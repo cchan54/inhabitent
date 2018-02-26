@@ -35,7 +35,6 @@
 	padding-left: 10rem;
 	padding-right: 10rem;
 
-
 	h2 {
 		font-family: 'Novecento';
 		text-transform: uppercase;
@@ -74,10 +73,10 @@
 		}
 	
 		a.btn {
+			color: white;
 			background: #248a83;
 			width: 150px;
 			height: 40px;
-			color: white;
 			justify-content: center;
 			cursor: pointer;
 			font-family: Novecento Sans Web,sans-serif;
@@ -91,6 +90,9 @@
 }
 
 /* --------- Journals -------------*/
+
+.latest-entries {
+	width: 100%;
 
 .most-recent-journals {
 	display: flex;
@@ -123,7 +125,7 @@
 		margin: 0.75rem;
 	}
 }
-
+}
 /* Find Us Page */
 
 

@@ -93,43 +93,52 @@ h2 {
 
 /* Single Product Page */
 
-.product-wrapper {
-	background-color: skyblue;
-	display: flex;
+// .product-container {
+// 	background-color: tomato;
+// 	display: flex;
+// 	margin-top: 100px;
 
-	.product-picture {
-		width: 50%;
-		margin-right: $base__space-unit * 2;
-	}
+// .product-wrapper {
+// 	background-color: skyblue;
+// 	display: flex;
 
-	.entry-content {
-		width: 50%;
-		margin: 0;
+// 	.product-picture {
+// 		width: 50%;
+// 		margin-right: $base__space-unit * 2;
+// 	}
 
-		h1, .product-price {
-			font-family: 'Novecento';
-			text-transform: uppercase;
-		}
+// 	.entry-content {
+// 		width: 50%;
+// 		margin: 0;
 
-		.product-price {
-			font-size: 1.8rem;
-			margin: 0.5rem 0 $base__space-unit 0;
-		}
+// 		h1, .product-price {
+// 			font-family: 'Novecento';
+// 			text-transform: uppercase;
+// 		}
+
+// 		.product-price {
+// 			font-size: 1.8rem;
+// 			margin: 0.5rem 0 $base__space-unit 0;
+// 		}
 		
-		h1 {
-			margin: 0;
-			color: $color__footer-h1;
-			font-size: 2.4rem;
-		}
+// 		h1 {
+// 			margin: 0;
+// 			color: $color__footer-h1;
+// 			font-size: 2.4rem;
+// 		}
 
-		&__p-product {
-			margin-bottom: 1rem;
-		}
-	}
-
-}
+// 		&__p-product {
+// 			margin-bottom: 1rem;
+// 		}
+// 	}
+// }
+// }
 
 /* Posts and pages */
+
+.site-header {
+	background: transparent;
+}
 
 .site-main {
 	display: block;
@@ -185,7 +194,79 @@ h2 {
 	display: none;
 }
 
-/* Product Types */
+/* Journal Page */
+
+.content-area {
+	padding: 3rem 5% 3rem 9rem;
+	width: 73%;
+	border-right: 1px solid $color__background-hr;
+
+	.entry-header {
+		justify-content: center;
+
+		a {
+			background: #248A83;
+			width: 500px;
+			color: white;
+			padding: .5rem;
+			font-size: 2.1rem;
+
+			a:visited{
+				color: $color__link;
+			}
+		}
+
+		p {
+			width: 760px;
+		}
+
+		// body:not(.search):not(.home):not(.page-template-default):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.page-template-about) .entry-header {
+		// 	position: relative;
+		
+		// 	img {
+		// 		width: 100%;
+		// 	}
+
+		.entry-title, .entry-meta {
+			position: relative;
+			background-color: $color__link;
+			color: $color__background-body;
+			font-family: Novecento,sans-serif;
+	
+			a {
+				color: $color__background-body;
+				text-decoration: none;
+	
+				&:hover {
+					color: $color__background-ins;
+				}
+			}
+		}
+
+		.entry-title {
+			top: 0;
+			left: 0;
+			padding: 0.50rem 1.5rem;
+			width: 75%;
+			margin-top: 2.25rem;
+			font-size: 2.35rem;
+			line-height: $font__line-height-entry;
+		}
+	
+		.entry-meta {
+			bottom: 0;
+			right: 0;
+			margin-bottom: 0.4rem;
+			padding: 0.25rem 1.5rem;
+			width: 50%;
+		}
+
+		img {
+			width: 760px;
+			height: 520px;
+		}
+	}
+}
 
 
 
