@@ -20,7 +20,8 @@ get_header(); ?>
 		</main><!-- #main -->
 			</div> <!-- entry-content -->
 				</div> <!-- container -->
-		<?php get_sidebar(); ?>
+				<?php get_sidebar(); ?>
+
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

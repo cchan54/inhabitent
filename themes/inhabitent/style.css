@@ -58,6 +58,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       -ms-flex-pack: center;
           justify-content: center;
   width: 80%;
+  margin-top: 5rem;
   margin-left: 10rem;
   margin-right: 10rem; }
   .product-header-container h1 {
@@ -598,58 +599,75 @@ a {
     outline: 0; }
 
 /* Menus */
-.site-header {
-  background: rgba(255, 255, 255, 0); }
-
-.main-navigation {
+.menu-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50px;
-  width: 100%;
+  width: 80%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: rgba(255, 255, 255, 0); }
-  .main-navigation img {
-    position: relative; }
-  .main-navigation ul {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    list-style: none;
-    margin: 0;
-    margin-right: 1.5rem; }
-    .main-navigation ul ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      top: 1.5rem;
-      left: -999rem;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
+  list-style: none; }
+  .menu-container .nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem; }
+    .menu-container .nav-container ul {
+      list-style: none; }
+    .menu-container .nav-container a {
+      color: #248a83; }
+  .menu-container .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 0px;
+    width: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: rgba(255, 255, 255, 0); }
+    .menu-container .main-navigation img {
+      position: relative; }
+    .menu-container .main-navigation ul {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      list-style: none;
+      margin: 0;
+      margin-right: 1.5rem; }
+      .menu-container .main-navigation ul ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        top: 1.5rem;
         left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    position: relative; }
-
-.site-branding {
-  width: 50px;
-  height: 50px; }
-
-.site-title {
-  width: 50px;
-  height: 50px; }
+        z-index: 99999; }
+        .menu-container .main-navigation ul ul ul {
+          left: -999rem;
+          top: 0; }
+        .menu-container .main-navigation ul ul li:hover > ul,
+        .menu-container .main-navigation ul ul li.focus > ul {
+          left: 100%; }
+        .menu-container .main-navigation ul ul a {
+          width: 200px; }
+      .menu-container .main-navigation ul li:hover > ul,
+      .menu-container .main-navigation ul li.focus > ul {
+        left: auto; }
+    .menu-container .main-navigation li {
+      position: relative; }
+  .menu-container .site-branding {
+    width: 50px;
+    height: 50px; }
+  .menu-container .site-title {
+    width: 50px;
+    height: 50px; }
 
 a {
   display: -webkit-box;
@@ -1141,34 +1159,48 @@ a {
   display: none; }
 
 /* Widget Area */
-.site-content .widget-area {
+.site-content .page .widget-area {
   text-align: left;
   padding-left: 3rem;
-  border-left: 1px solid #e1e1e1; }
+  border-left: 1px solid #e1e1e1;
+  color: black; }
 
-.site-content .site-content h2 {
+.site-content .page .site-content h2 {
   text-align: left; }
 
-.site-content h2.widget-title {
+.site-content .page h2.widget-title {
   text-align: left;
   margin-top: 3rem; }
 
-.site-content .textwidget a {
+.site-content .page .textwidget a {
   color: black; }
 
-.site-content a:visited {
+.site-content .page a:visited {
   color: black; }
 
-.site-content .widget_archive {
+.site-content .page .widget_archive {
   text-align: left;
   padding: none;
   margin: none; }
-  .site-content .widget_archive a {
+  .site-content .page .widget_archive a {
     color: #248A83; }
-  .site-content .widget_archive ul {
+  .site-content .page .widget_archive ul {
     list-style: none;
     padding: 0;
     margin: 0; }
+
+/* Find Us */
+.page .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.page .entry-content {
+  width: 70%;
+  margin-right: 10rem; }
+  .page .entry-content p {
+    width: auto; }
 
 /* Comments */
 .comment-content a {
@@ -1250,7 +1282,7 @@ object {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1478,11 +1510,10 @@ h2 {
 --------------------------------------------------------------*/
 .site-header {
   width: 100%;
-  height: 50px;
-  padding: 0.5rem 0;
+  height: 0px;
   position: relative;
   clear: both;
-  background: transparent;
+  border-bottom: 1px solid #e1e1e1;
   z-index: 999; }
   .site-header .container-flex--row-nowrap {
     margin: 0 auto; }

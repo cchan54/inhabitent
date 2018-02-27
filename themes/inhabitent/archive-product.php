@@ -5,7 +5,7 @@ get_header(); ?>
         <?php if ( have_posts() ) : ?>
             <header class="page-header">
             <section class="product-header-container">
-                <h1>Shop Stuff</h1>
+                <h2>Shop Stuff</h2>
                 <?php
                 $terms = get_terms( array(
                     'taxonomy'   => 'product_type',

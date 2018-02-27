@@ -495,12 +495,13 @@ h1 {
 
 /* Widget Area */
 
-.site-content{
+.site-content .page {
 
 .widget-area {
 	text-align: left;
 	padding-left: 3rem;
 	border-left: 1px solid $color__background-hr;
+	color: black;
 }
 
 	.site-content {
@@ -541,6 +542,23 @@ h1 {
 		}
 	
 		}
+
+/* Find Us */
+
+.page {
+	.container {
+		width: 100%;
+		display: flex;
+	}
+	.entry-content {
+		width: 70%;
+		margin-right: 10rem;
+
+		p {
+			width: auto;
+		}
+	}
+}
 
 
 /* Comments */
