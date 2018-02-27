@@ -6,11 +6,11 @@
  */
 get_header(); ?>
     <div id="primary" class="content-area">
-			<div class="main-journal-content"
+			<div class="entry-content">
         <main id="main" class="site-main" role="main">
 				<?php if ( is_home() && ! is_front_page() ) : ?>
 					<header>
-						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+						<h2 class="page-title screen-reader-text"><?php single_post_title(); ?></h2>
 					</header>
 				<?php endif; ?>
 
@@ -22,9 +22,9 @@ get_header(); ?>
 				<?php endwhile; ?>
 
 				<?php the_posts_navigation(); ?>
-		
 				</main><!-- #main -->
-			</div> <!--main-journal-content-->
+			</div> <!--entry-content-->
+			<?php get_sidebar(); ?>
+
 	</div><!-- #primary -->
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

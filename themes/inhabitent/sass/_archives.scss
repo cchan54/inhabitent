@@ -2,7 +2,91 @@
 # Archives
 --------------------------------------------------------------*/
 
-.product-archive-grid {
-  flex-flow: row wrap;
-  justify-content: space-between;
+/* Header */
+
+.page-header {
+    margin-top: $base__space-unit * 1.5;
+    justify-content: center;
+}
+
+.product-header-container {
+  justify-content: center;
+  width: 80%;
+  margin-left: 10rem;
+  margin-right: 10rem;
+
+  h1 {
+    text-transform: uppercase;
+    font-family: 'Novecento';
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2.4rem;
+  }
+
+  a {
+    color: green;
+    justify-content: center;
+  }
+
+  a:visited{
+    color: green;
+  }
+
+}
+
+.product-tax {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $base__space-unit * 2;
+  border-bottom: 1px dashed #d1d1d1;
+  padding-bottom: 2.5rem;
+}
+
+/* Archives */
+
+.post-type-archive-product {
+  justify-content: center;
+
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 9rem;
+    margin-right: 9rem;
+
+
+    .product-thumbnail-wrapper {
+      height: 250px;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid #d1d1d1;
+    }
+  
+    img {
+      object-fit: cover;
+      width: 265px;
+      height: 250px;
+    }
+  
+  }
+
+.product-info {
+  justify-content: center;
+  width: auto;
+  height: auto;
+  border: 1px solid #d1d1d1;
+  }
+
+  h2.product-title {
+    font-size: 1rem;
+    font-family: 'Merriweather';
+    font-weight: 400;
+    padding: 4px;
+  }
+
+  span.product-price, h2.product-title {
+    background-color: #fff;
+    text-transform: none;
+    text-decoration: none;
+  }
 }

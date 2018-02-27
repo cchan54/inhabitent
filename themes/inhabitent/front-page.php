@@ -69,9 +69,9 @@
 												</div><!-- .entry-meta -->	
 
 						<h3><a class="journal-title" href="<?php echo get_post_permalink() ?>"><?php the_title(); ?></a></h3>												
-							</div><!-- .entry-wrapper -->
 								<div class="entry-readmore link-button">
 									<a href="<?php echo get_post_permalink()?>">Read Entry</a>
+									</div><!-- .entry-wrapper -->
 										</div><!-- .entry-readmore -->
         							</div><!-- .journal-recent-block-item -->
 

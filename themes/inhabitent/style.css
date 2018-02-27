@@ -46,14 +46,87 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Archives
 --------------------------------------------------------------*/
-.product-archive-grid {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+/* Header */
+.page-header {
+  margin-top: 2.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.product-header-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin-left: 10rem;
+  margin-right: 10rem; }
+  .product-header-container h1 {
+    text-transform: uppercase;
+    font-family: 'Novecento';
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2.4rem; }
+  .product-header-container a {
+    color: green;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .product-header-container a:visited {
+    color: green; }
+
+.product-tax {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3rem;
+  border-bottom: 1px dashed #d1d1d1;
+  padding-bottom: 2.5rem; }
+
+/* Archives */
+.post-type-archive-product {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .post-type-archive-product .product-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 9rem;
+    margin-right: 9rem; }
+    .post-type-archive-product .product-grid .product-thumbnail-wrapper {
+      height: 250px;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid #d1d1d1; }
+    .post-type-archive-product .product-grid img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 265px;
+      height: 250px; }
+  .post-type-archive-product .product-info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+    height: auto;
+    border: 1px solid #d1d1d1; }
+  .post-type-archive-product h2.product-title {
+    font-size: 1rem;
+    font-family: 'Merriweather';
+    font-weight: 400;
+    padding: 4px; }
+  .post-type-archive-product span.product-price, .post-type-archive-product h2.product-title {
+    background-color: #fff;
+    text-transform: none;
+    text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Buttons
@@ -701,11 +774,21 @@ a {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.content-area {
+  width: 100%; }
+
 /* About */
+.page-template-about .content-area {
+  width: 100%;
+  margin-left: 0rem;
+  margin-right: 0rem; }
+
 .page-template-about h1 {
   color: #fff;
+  background: none;
   font-family: 'Novecento';
   text-transform: uppercase;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -716,46 +799,70 @@ a {
 .page-template-default h1 {
   display: none; }
 
-.entry-content {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+/* Journal Archive */
+.blog .site-content {
+  margin-top: 3rem;
+  border-top: 1px solid #e1e1e1; }
 
-.entry-header {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center; }
+.blog .content-area {
+  width: 80%;
+  margin-left: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
-.entry-content {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 800px;
-  margin: 4.5rem auto;
-  line-height: 1.75rem; }
-  .entry-content h2 {
-    text-align: center;
-    font-size: 2.1rem;
-    font-family: 'Novecento'; }
+.blog .journal-title {
+  color: #248a83;
+  font-size: 1.25rem;
+  padding: 10px; }
 
-/* Product Grid Page */
-.page-header {
+.blog .entry-content {
+  width: 80%; }
+
+.blog .hentry {
   width: 100%; }
-  .page-header h1 {
-    text-align: center; }
 
-.product-grid {
-  background-color: tomato;
-  display: grid;
-  height: 550px; }
-  .product-grid p {
-    visibility: hidden; }
-  .product-grid a {
-    color: black; }
-    .product-grid a a:visited {
-      color: black; }
+.blog .entry-header {
+  position: relative;
+  width: 80%; }
+  .blog .entry-header img {
+    width: 100%; }
+
+.blog .entry-title {
+  background-color: #248a83;
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Novecento";
+  top: 0;
+  width: 80%;
+  padding: .75rem 1.5rem;
+  margin-top: 2.25rem; }
+  .blog .entry-title a {
+    text-align: left; }
+  .blog .entry-title a:link {
+    font-size: 2.1rem;
+    color: white;
+    text-decoration: none; }
+  .blog .entry-title a:visited {
+    text-decoration: none;
+    color: white; }
+  .blog .entry-title a:active {
+    text-decoration: none; }
+
+.blog .entry-content {
+  margin-bottom: 2rem;
+  width: 80%; }
+  .blog .entry-content .entry-meta {
+    color: white;
+    background-color: #248a83;
+    font-family: "Novecento";
+    position: absolute;
+    right: 0;
+    bottom: 7px; }
+
+/* Single Journal Page */
+.blog .entry-content .site-content {
+  width: 80%; }
 
 /* Single Product Page */
 .product-container {
@@ -891,6 +998,36 @@ a {
     .main-journal-content .entry-header img {
       width: 760px;
       height: 520px; }
+
+/* Widget Area */
+.site-content .widget-area {
+  text-align: left;
+  padding-left: 3rem;
+  border-left: 1px solid #e1e1e1; }
+
+.site-content .site-content h2 {
+  text-align: left; }
+
+.site-content h2.widget-title {
+  text-align: left;
+  margin-top: 3rem; }
+
+.site-content .textwidget a {
+  color: black; }
+
+.site-content a:visited {
+  color: black; }
+
+.site-content .widget_archive {
+  text-align: left;
+  padding: none;
+  margin: none; }
+  .site-content .widget_archive a {
+    color: #248A83; }
+  .site-content .widget_archive ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
 
 /* Comments */
 .comment-content a {
@@ -1076,6 +1213,8 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1100,10 +1239,13 @@ object {
       height: 100%;
       padding: 0.75rem; }
       .latest-entries .journal-recent-block-item .entry-wrapper .entry-meta {
-        font-size: 0.75rem; }
+        color: black;
+        font-family: "Novecento";
+        padding: .5rem .75rem; }
     .latest-entries .journal-recent-block-item .entry-readmore {
       width: 40%;
-      margin: 0.75rem; }
+      margin: 0.75rem;
+      padding: .5rem .75rem; }
 
 /* Find Us Page */
 .entry-content {
@@ -1132,6 +1274,10 @@ h2 {
 
 .entry-readmore.link-button, .social-buttons button.entry-readmore {
   width: 165px; }
+  .entry-readmore.link-button a, .social-buttons button.entry-readmore a {
+    color: black; }
+  .entry-readmore.link-button a:visited, .social-buttons button.entry-readmore a:visited {
+    color: black; }
 
 /*--------------------------------------------------------------
 # Footer Styles

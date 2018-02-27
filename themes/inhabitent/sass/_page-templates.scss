@@ -105,6 +105,7 @@
 .most-recent-journals {
 	display: flex;
 	flex-flow: row nowrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
@@ -129,15 +130,18 @@
 		padding: 0.75rem;
 
 		.entry-meta {
-			font-size: $base__space-unit / 2;
+			color: black;
+			font-family: "Novecento";
+			padding: .5rem .75rem;
 		}
 	}
 
 	.entry-readmore {
 		width: 40%;
 		margin: 0.75rem;
+		padding: .5rem .75rem;
+		}
 	}
-}
 }
 /* Find Us Page */
 
@@ -170,4 +174,12 @@ h2 {
 }
 .entry-readmore.link-button {
 	width: 165px;
+	
+	a{
+		color: black;
+	}
+
+	a:visited{
+		color: black;
+	}
 }
