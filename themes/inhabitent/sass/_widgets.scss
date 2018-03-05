@@ -1,13 +1,57 @@
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+.widget-area {
+	padding: ($base__space-unit * 2) 0 ($base__space-unit * 2) ($base__space-unit * 2);
+	width: 27%;
+}
+
+.widget-title {
+	margin-top: 0;
+	margin-bottom: $base__space-unit;
+}
+
+h2.widget-title {
+	font-family: 'Novecento';
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
 
 .widget {
-	margin: 0 0 $base__space-unit;
+	margin: 0 0 ($base__space-unit * 2);
 
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
+	}
+
+	&.widget_archive ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+	}
+}
+
+.business-hours {
+	span.font-bold {
+		font-weight: bold;
+	}
+}
+
+.sidebar-container {
+	display: flex;
+}
+
+.sidebar-contact {
+	margin-bottom: $base__space-unit / 1.2;
+	i {
+		width: 20px;
+		margin-right: 0.5rem;
+	}
+
+	span {
+		position: relative;
 	}
 }
 
