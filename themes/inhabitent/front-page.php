@@ -77,4 +77,35 @@
 
 			<?php endforeach; wp_reset_postdata(); ?>
 
+<!-- START OF LATEST ADVENTURES POSTS -->
+      <div class="latest-adventures-container">
+          <h2>Latest Adventures</h2>
+          <div class="latest-adventures">
+              <?php /* Start the Loop */ ?>
+                  <?php
+                      $args = array( 'post_type' => 'latest_adventures', 'order' => 'DESC', 'posts_per_page' => 4, 'orderby' => 'date' );
+                      $adventure_posts = get_posts( $args ); // returns an array of posts
+                  ?>
+                  <?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+                      <div class="latest-adventures-block-item">
+                          <div class="latest-adventures-wrapper">
+														<?php if ( has_post_thumbnail() ) : ?>
+														<?php the_post_thumbnail( 'large' ); ?></a>
+														<?php endif; ?>  
+                              <img src="<?php echo CFS()->get( 'adventure_header' ); ?>"/>
+                              <div class="info-container">
+                                  <h3><a class="latest-adventures-title" href="<?php echo get_post_permalink() ?>"><?php the_title(); ?></a></h3>
+                                  <div class="entry-readmore link-button">
+                                      <a href="<?php echo get_post_permalink()?>">Read More</a>
+                                  </div><!-- .entry-readmore -->
+                              </div>
+                          </div><!-- .latest-adventures-wrapper -->
+                      </div><!-- .latest-adventures-block-item -->
+                  <?php endforeach; wp_reset_postdata(); ?>
+          </div><!-- .most-recent-journals -->
+          <div class="latest-adventures-readmore link-button">
+              <a href="<?php echo get_post_type_archive_link( 'adventure' )?>">More Adventures</a>
+          </div><!-- .entry-readmore -->
+      </div><!-- .container -->
+
 <?php get_footer(); ?>

@@ -13,7 +13,8 @@
 /* About */
 
 .page-template-about,
-.custom-hero {
+.custom-hero,
+.archive {
 	h1.entry-title {
 		color: #fff;
 		background: none;
@@ -25,6 +26,15 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		font-size: 3rem;
+	}
+
+	article {
+		width: 100%;
+	}
+
+	.container {
+		width: 80%;
+		margin: 0 18rem;
 	}
 }
 
@@ -42,15 +52,21 @@
 
 /* Journal Archive */
 
-body.blog, body.archive, body.search {
+body.blog, body.archive, body.search, body.single, body.page-template-default, body.tax-product_type {
 
 	.entry-readmore.link-button {
-		width: 165px;
+		width: 200px;
+		margin: 2rem 0 2rem 0;
 	}
 }
 
 .blog,
 .single {
+
+	article {
+		width: 100%;
+	}
+
 	.site-content {
 		margin-top: 3rem;
 		border-top: 1px solid $color__background-hr;
@@ -60,21 +76,37 @@ body.blog, body.archive, body.search {
 		margin-left: 10rem;
 		display: flex;
 	}
+
 	.journal-title {
 		color: #248a83;
+		font-family: "Novecento";
 		font-size: 1.25rem;
 		padding: 10px;
+
+		a {
+			font-size: 2rem;
+		}
 	}
+	.entry-content {
+		width: 90%;
+	}
+
 	.hentry {
 		width: 100%;
 	}
 	.entry-header {
 		position: relative;
-		width: 80%;
-		img {
+		width: 90%;
+	}
+
+	img {
 			width: 100%;
 		}
+
+	a {
+		color: #248a83;
 	}
+}
 	.entry-title {
 		background-color: #248a83;
 		position: absolute;
@@ -113,7 +145,6 @@ body.blog, body.archive, body.search {
 			bottom: 7px;
 		}
 	}
-}
 
 .main-journal-content {
 	padding: 3rem 5% 3rem 9rem;
@@ -179,8 +210,9 @@ body.blog, body.archive, body.search {
 		margin-top: 3rem;
 		border-top: 1px solid $color__background-hr;
 	}
+
 	.content-area {
-		width: 80%;
+		width: 90%;
 		margin-left: 10rem;
 		display: flex;
 	}
@@ -194,11 +226,15 @@ body.blog, body.archive, body.search {
 	}
 	.entry-header {
 		position: relative;
-		width: 80%;
+		width: 90%;
 		img {
 			width: 100%;
 		}
+		h1 {
+			color: white;
+		}
 	}
+
 	.entry-title {
 		background-color: #248a83;
 		position: absolute;
@@ -245,7 +281,7 @@ body.blog, body.archive, body.search {
 		p {
 			margin-bottom: 1.5rem;
 			line-height: 2rem;
-			width: auto;
+			width: 90%;
 			height: auto;
 		}
 		.entry-footer {
@@ -375,11 +411,12 @@ body.blog, body.archive, body.search {
 /* Posts and pages */
 
 .site-main {
+	width: 100%;
 	display: block;
 	align-content: center;
 	justify-content: center;
 	h1 {
-		color: white;
+		color: black;
 	}
 	.product-type-block-wrapper {
 		border: 10px;

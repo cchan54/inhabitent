@@ -2,8 +2,14 @@
 # Widgets
 --------------------------------------------------------------*/
 .widget-area {
+	display:inline-block;
 	padding: ($base__space-unit * 2) 0 ($base__space-unit * 2) ($base__space-unit * 2);
-	width: 27%;
+	width: 30%;
+
+	a {
+		display: inline-flex;
+		text-transform: lowercase;
+	}
 }
 
 .widget-title {

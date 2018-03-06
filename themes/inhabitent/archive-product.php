@@ -5,7 +5,7 @@ get_header(); ?>
         <?php if ( have_posts() ) : ?>
             <header class="page-header">
             <section class="product-header-container">
-                <h2>Shop Stuff</h2>
+                <h1>Shop Stuff</h1>
                 <?php
                 $terms = get_terms( array(
                     'taxonomy'   => 'product_type',
@@ -16,11 +16,10 @@ get_header(); ?>
                     <div class="product-tax">
                         <?php foreach ( $terms as $term ) :
                             ?>
-                            <div class="product-page-types">
+
                                     <a href="<?php echo get_term_link( $term ); ?>"
                                       class="product-type-links"><?php echo $term->name; ?></a>
                                 </p>
-                            </div>
                         <?php endforeach; ?>
                     </div>
                 <?php endif; ?>

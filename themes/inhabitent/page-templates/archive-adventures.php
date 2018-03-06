@@ -1,6 +1,6 @@
 <?php
 /**
- * This template is for the static adventures section of the front page
+ * Template Name : Latest Adventures
  *
  * @package RED_Starter_Theme
  */

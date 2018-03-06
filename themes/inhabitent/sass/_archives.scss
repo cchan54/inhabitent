@@ -4,6 +4,8 @@
 
 /* Header */
 
+.archive{
+
 .page-header {
     margin-top: $base__space-unit * 1.5;
     justify-content: center;
@@ -13,8 +15,7 @@
   justify-content: center;
   width: 80%;
   margin-top: 5rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 7rem;
 
   h1 {
     text-transform: uppercase;
@@ -27,6 +28,7 @@
   a {
     color: #248a83;
     justify-content: center;
+    display: inline-flex;
   }
 
   a:visited{
@@ -35,49 +37,62 @@
 
 }
 
-.product-page-links {
-  font-family: "Merriweather";
-}
-
 .product-tax {
+  width: 70%;
+  margin-left: 10rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: $base__space-unit * 2;
   border-bottom: 1px dashed #d1d1d1;
   padding-bottom: 2.5rem;
+
+  h1 {
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 3rem 0rem 3rem 10rem;
+   }
+  }
 }
+
 
 /* Archives */
 
-.post-type-archive-product {
-  justify-content: center;
+.archive {
+  p {
+    text-align: center;
+  }
 
   .product-grid {
+    width: 1200px;
+    margin-left: 8rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 9rem;
-    margin-right: 9rem;
 
+    .hentry {
+      width: auto;
+    }
 
     .product-thumbnail-wrapper {
       height: 250px;
+      width: 265px;
       overflow: hidden;
       position: relative;
       border: 1px solid #d1d1d1;
-    }
   
     img {
       object-fit: cover;
       width: 265px;
       height: 250px;
     }
-  
   }
+}
 
 .product-info {
-  justify-content: center;
-  width: auto;
+  width: 265px;
   height: auto;
   border: 1px solid #d1d1d1;
   }
