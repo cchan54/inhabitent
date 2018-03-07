@@ -1,4 +1,4 @@
-(function($){
+$(document).ready   (function($){
     $('.main-navigation .search-field').hide();
    
     $('.main-navigation .search-toggle').on('click', function(evt){
@@ -14,7 +14,7 @@
       $('.main-navigation .search-field').hide('fast');
     });
     
-    $('.search-field').keydown(function(enter) {
+    $('.search-field').keydown(function() {
       $('.search-field').submit();
     })
    
