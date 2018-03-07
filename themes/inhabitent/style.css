@@ -605,6 +605,13 @@ a {
     outline: 0; }
 
 /* Menus */
+.menu {
+  font-family: "Novecento"; }
+
+.search-toggle {
+  max-width: 50px;
+  padding: 0px; }
+
 .home .main-navigation a {
   color: white; }
 
@@ -622,7 +629,8 @@ a {
     padding-right: 5rem;
     text-decoration: none; }
   .main-navigation .menu-menu-container {
-    margin-left: 25rem; }
+    margin-left: 25rem;
+    text-align: center; }
     .main-navigation .menu-menu-container ul {
       width: auto;
       list-style: none;
@@ -636,9 +644,7 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  display: block; }
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
