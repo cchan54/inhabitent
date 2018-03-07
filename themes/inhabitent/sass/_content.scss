@@ -27,11 +27,9 @@
 		transform: translate(-50%, -50%);
 		font-size: 3rem;
 	}
-
 	article {
 		width: 100%;
 	}
-
 	.container {
 		width: 80%;
 		margin: 0 18rem;
@@ -52,8 +50,12 @@
 
 /* Journal Archive */
 
-body.blog, body.archive, body.search, body.single, body.page-template-default, body.tax-product_type {
-
+body.blog,
+body.archive,
+body.search,
+body.single,
+body.page-template-default,
+body.tax-product_type {
 	.entry-readmore.link-button {
 		width: 200px;
 		margin: 2rem 0 2rem 0;
@@ -62,13 +64,11 @@ body.blog, body.archive, body.search, body.single, body.page-template-default, b
 
 .blog,
 .single {
-
 	article {
 		width: 100%;
 	}
-
 	.site-content {
-		margin-top: 3rem;
+		// margin-top: 3rem;
 		border-top: 1px solid $color__background-hr;
 	}
 	.content-area {
@@ -76,13 +76,11 @@ body.blog, body.archive, body.search, body.single, body.page-template-default, b
 		margin-left: 10rem;
 		display: flex;
 	}
-
 	.journal-title {
 		color: #248a83;
 		font-family: "Novecento";
 		font-size: 1.25rem;
 		padding: 10px;
-
 		a {
 			font-size: 2rem;
 		}
@@ -90,7 +88,6 @@ body.blog, body.archive, body.search, body.single, body.page-template-default, b
 	.entry-content {
 		width: 90%;
 	}
-
 	.hentry {
 		width: 100%;
 	}
@@ -98,53 +95,53 @@ body.blog, body.archive, body.search, body.single, body.page-template-default, b
 		position: relative;
 		width: 90%;
 	}
-
 	img {
-			width: 100%;
-		}
-
+		width: 100%;
+	}
 	a {
 		color: #248a83;
 	}
 }
-	.entry-title {
+
+.entry-title {
+	background-color: #248a83;
+	position: absolute;
+	text-transform: uppercase;
+	font-family: "Novecento";
+	top: 0;
+	width: 80%;
+	padding: .75rem 1.5rem;
+	margin-top: 2.25rem;
+	a {
+		text-align: left;
+	}
+	a:link {
+		// background-color: #248a83;
+		font-size: 2.1rem;
+		color: white;
+		text-decoration: none; // padding:1rem;
+	}
+	a:visited {
+		text-decoration: none;
+		color: white;
+	}
+	a:active {
+		text-decoration: none;
+	}
+}
+
+.entry-content {
+	margin-bottom: 2rem;
+	width: 80%;
+	.entry-meta {
+		color: white;
 		background-color: #248a83;
-		position: absolute;
-		text-transform: uppercase;
 		font-family: "Novecento";
-		top: 0;
-		width: 80%;
-		padding: .75rem 1.5rem;
-		margin-top: 2.25rem;
-		a {
-			text-align: left;
-		}
-		a:link {
-			// background-color: #248a83;
-			font-size: 2.1rem;
-			color: white;
-			text-decoration: none; // padding:1rem;
-		}
-		a:visited {
-			text-decoration: none;
-			color: white;
-		}
-		a:active {
-			text-decoration: none;
-		}
+		position: absolute;
+		right: 0;
+		bottom: 7px;
 	}
-	.entry-content {
-		margin-bottom: 2rem;
-		width: 80%;
-		.entry-meta {
-			color: white;
-			background-color: #248a83;
-			font-family: "Novecento";
-			position: absolute;
-			right: 0;
-			bottom: 7px;
-		}
-	}
+}
 
 .main-journal-content {
 	padding: 3rem 5% 3rem 9rem;
@@ -205,15 +202,19 @@ body.blog, body.archive, body.search, body.single, body.page-template-default, b
 
 /* Single Journal Page */
 
-.single {
+.single,
+.blog {
 	.site-content {
 		margin-top: 3rem;
+	}
+}
+
+.single,
+.page {
+	.site-content {
 		border-top: 1px solid $color__background-hr;
 	}
-
 	.content-area {
-		width: 90%;
-		margin-left: 10rem;
 		display: flex;
 	}
 	.journal-title {
@@ -234,7 +235,6 @@ body.blog, body.archive, body.search, body.single, body.page-template-default, b
 			color: white;
 		}
 	}
-
 	.entry-title {
 		background-color: #248a83;
 		position: absolute;
@@ -406,6 +406,80 @@ body.blog, body.archive, body.search, body.single, body.page-template-default, b
 
 .footer-entry {
 	display: flex;
+}
+
+/* Find Us Page */
+
+.page-id-31 {
+	width: 100%;
+	justify-content: center;
+	.title-text {
+		font-size: 3rem;
+		width: 500px;
+	}
+	.map {
+		width: 1200px;
+		height: 500px;
+	}
+	.site-content {
+		display: block;
+		width: 95%;
+		margin-top: 7rem;
+	}
+	.content-area {
+		width: 90%;
+		margin-left: 10rem;
+		display: flex;
+	}
+	.site-main {
+		display: flex;
+	}
+	.entry-content {
+		padding: 0px;
+		width: 100%;
+		h2 {
+			text-align: left;
+		}
+	}
+	.site-footer {
+		margin: 0;
+	}
+	h1,
+	h2 {
+		font-family: 'Novecento';
+		text-transform: uppercase;
+		line-height: 1.25;
+	}
+	h1 {
+		font-size: 2.4rem;
+	}
+	h2 {
+		font-size: 1.75rem;
+	}
+	.entry-readmore.link-button {
+		width: 165px;
+	}
+	div[role='form'] {
+		font-family: 'Novecento';
+		text-transform: uppercase;
+		span.required-field {
+			color: red;
+			font-size: $base__space-unit / 2;
+			position: absolute;
+		}
+		input,
+		textarea {
+			background: $color__input-bg;
+			border-radius: 0;
+			margin-top: $base__space-unit / 2;
+		}
+		p input.wpcf7-form-control.wpcf7-submit {
+			border: none !important;
+		}
+	}
+	.widget-area {
+		padding: 0px;
+	}
 }
 
 /* Posts and pages */

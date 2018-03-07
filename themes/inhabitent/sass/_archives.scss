@@ -41,6 +41,7 @@
   width: 70%;
   margin-left: 10rem;
   display: flex;
+  font-family: "Novecento";
   justify-content: space-between;
   margin-bottom: $base__space-unit * 2;
   border-bottom: 1px dashed #d1d1d1;
@@ -57,13 +58,7 @@
   }
 }
 
-
 /* Archives */
-
-.archive {
-  p {
-    text-align: center;
-  }
 
   .product-grid {
     width: 1200px;
@@ -109,4 +104,3 @@
     text-transform: none;
     text-decoration: none;
   }
-}
