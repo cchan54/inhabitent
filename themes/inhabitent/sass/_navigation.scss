@@ -30,9 +30,27 @@ a {
 	font-family: "Novecento";
 }
 
+.search-field {
+	border: 0;
+	background: transparent;
+	font-family: Novecento Sans Web,sans-serif;
+	margin-left: .75rem;
+	padding: 0 .3rem;
+	text-transform: uppercase;
+	outline: none;
+}
+
+.search-form {
+	padding-right: 1rem;
+}
+
 .search-toggle {
 	max-width: 50px;
 	padding: 0px;
+
+	a {
+		padding: 0px;
+	}
 	}
 
 .home {
@@ -51,19 +69,25 @@ a {
 	padding-top: 1rem;
 
 	a {
-		padding-right: 5rem;
+		// padding-right: 5rem;
 		text-decoration: none;
 	}
 
+	img {
+		justify-content: flex-start;
+	}
+
 	.menu-menu-container {
-		margin-left: 25rem;
+		margin-left: 50rem;
 		text-align: center;
+		width: auto;
 
 	ul {
 		width: auto;
 		list-style: none;
 		text-decoration: none;
 		justify-content: space-between;
+		margin-left: 0px;
 		
 
 		a {
