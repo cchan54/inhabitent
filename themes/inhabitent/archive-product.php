@@ -40,7 +40,7 @@ get_header(); ?>
 
             <?php endif; ?>
 						<div class="product-info">
-            <h2 class="product-title"><?php the_title(); ?>................<span class="product-price"><?php echo CFS()->get( 'price' ); ?></span></h2>       		 </div>
+            <h3 class="product-title"><?php the_title(); ?>................<span class="product-price"><?php echo CFS()->get( 'price' ); ?></span></h2>       		 </div>
     
                 <?php if ( 'post' === get_post_type() ) : ?>
                     <div class="entry-meta-journal">

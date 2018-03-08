@@ -1,4 +1,4 @@
-$(document).ready   (function($){
+(function($){
     $('.main-navigation .search-field').hide();
    
     $('.main-navigation .search-toggle').on('click', function(evt){

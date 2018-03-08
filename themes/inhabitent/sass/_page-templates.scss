@@ -92,6 +92,8 @@
 .site-content {
   h2 {
     text-align: center;
+    font-weight: 400;
+    font-size: 2.4rem;
   }
 }
 
@@ -129,10 +131,17 @@
     .entry-readmore {
       width: 40%;
       margin: 0.75rem;
-      padding: 0.5rem 0.75rem;
+      padding: .75rem 0.5rem;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+      }
     }
   }
 }
+
+/*-- Latest Adventures --*/
 
 .latest-adventures-container {
   width: $content__size-width;
@@ -165,11 +174,14 @@
         }
         img {
           position: absolute;
-          max-width: none;
-          max-height: 600px;
+          max-width: 800px;
+          height: 600px;
           transform: translate(-50%, -50%);
           top: 50%;
           left: 50%;
+
+          
+
         }
         h3,
         .entry-readmore {

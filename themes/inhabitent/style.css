@@ -58,8 +58,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       -ms-flex-pack: center;
           justify-content: center;
   width: 80%;
-  margin-top: 5rem;
-  margin-left: 7rem; }
+  margin: 5rem 7rem 3rem 10rem; }
   .archive .product-header-container h1 {
     text-transform: uppercase;
     font-family: 'Novecento';
@@ -78,7 +77,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     color: #248a83; }
 
 .archive .product-tax {
-  width: 70%;
+  width: 80%;
   margin-left: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,7 +88,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
           justify-content: space-between;
   margin-bottom: 3rem;
   border-bottom: 1px dashed #d1d1d1;
-  padding-bottom: 2.5rem; }
+  padding-bottom: 2.5rem;
+  padding: 1rem; }
+  .archive .product-tax .product-type-links {
+    font-family: "Novecento";
+    font-size: 1.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px; }
   .archive .product-tax h1 {
     text-align: center; }
   .archive .product-tax a {
@@ -127,7 +134,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   height: auto;
   border: 1px solid #d1d1d1; }
 
-h2.product-title {
+h3.product-title {
+  text-align: center;
   font-size: 1rem;
   font-family: 'Merriweather';
   font-weight: 400;
@@ -333,49 +341,49 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Novecento';
-  src: url("../../fonts/61322b6c62729a0b6fe7fa1336b2668e.woff2") format("woff2"), url("../../fonts/61322b6c62729a0b6fe7fa1336b2668e.woff") format("woff"), url("../../fonts/61322b6c62729a0b6fe7fa1336b2668e.ttf") format("truetype");
+  src: url("../../fonts/6a7a6e613a1cd5a423e84a9f36d88414.woff2") format("woff2"), url("../../fonts/6a7a6e613a1cd5a423e84a9f36d88414.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../../fonts/27feaa92c1aeec22b14ff284d773a009.woff2") format("woff2"), url("../../fonts/27feaa92c1aeec22b14ff284d773a009.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento';
-  src: url("../../fonts/74282f37cf98accecbfec8b4b02c48d1.woff2") format("woff2"), url("../../fonts/74282f37cf98accecbfec8b4b02c48d1.woff") format("woff"), url("../../fonts/74282f37cf98accecbfec8b4b02c48d1.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Novecento';
-  src: url("../../fonts/novecento_sans_widenormal.woff2") format("woff2"), url("../../fonts/novecento_sans_widenormal.woff") format("woff"), url("../../fonts/novecento_sans_widenormal.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Novecento';
-  src: url("../../fonts/novecento_sans_widedemibold.woff2") format("woff2"), url("../../fonts/novecento_sans_widedemibold.woff") format("woff"), url("../../fonts/novecento_sans_widedemibold.ttf") format("truetype");
+  src: url("../../fonts/novecento_sans_widedemibold.woff2") format("woff2"), url("../../fonts/novecento_sans_widedemibold.woff") format("woff");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento';
-  src: url("../../fonts/6b62bb03c1764c736079d5bff35220a2.woff2") format("woff2"), url("../../fonts/6b62bb03c1764c736079d5bff35220a2.woff") format("woff"), url("../../fonts/6b62bb03c1764c736079d5bff35220a2.ttf") format("truetype");
+  src: url("../../fonts/novecento_sans_widenormal.woff2") format("woff2"), url("../../fonts/novecento_sans_widenormal.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento';
-  src: url("../../fonts/376d6d8bff8acb5d3192e3a71fb394b6.woff2") format("woff2"), url("../../fonts/376d6d8bff8acb5d3192e3a71fb394b6.woff") format("woff"), url("../../fonts/376d6d8bff8acb5d3192e3a71fb394b6.ttf") format("truetype");
+  src: url("../../fonts/6f80de174d578c6b039d26d9d0420f3e.woff2") format("woff2"), url("../../fonts/6f80de174d578c6b039d26d9d0420f3e.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../../fonts/a3c91170d21ccc284e02e155dd3556d7.woff2") format("woff2"), url("../../fonts/a3c91170d21ccc284e02e155dd3556d7.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento';
-  src: url("../../fonts/f83c3c1d48fd81e309a52a893b56bd47.woff2") format("woff2"), url("../../fonts/f83c3c1d48fd81e309a52a893b56bd47.woff") format("woff"), url("../../fonts/f83c3c1d48fd81e309a52a893b56bd47.ttf") format("truetype");
+  src: url("../../fonts/7f9ccb9e8c4b8d70df6a2bc0734a72ac.woff2") format("woff2"), url("../../fonts/7f9ccb9e8c4b8d70df6a2bc0734a72ac.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento';
-  src: url("../../fonts/fa53ddce0e9e29253c20a5d59e5ed158.woff2") format("woff2"), url("../../fonts/fa53ddce0e9e29253c20a5d59e5ed158.woff") format("woff"), url("../../fonts/fa53ddce0e9e29253c20a5d59e5ed158.ttf") format("truetype");
+  src: url("../../fonts/ccbe30495b51c0e98dd848ba54c1916e.woff2") format("woff2"), url("../../fonts/ccbe30495b51c0e98dd848ba54c1916e.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -645,18 +653,26 @@ a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
+  .main-navigation .menu {
+    margin: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .main-navigation .menu-menu-container {
     margin-left: 50rem;
     text-align: center;
     width: auto; }
     .main-navigation .menu-menu-container ul {
+      font-family: "Novecento";
+      font-size: 1rem;
       width: auto;
       list-style: none;
+      -ms-flex-line-pack: center;
+          align-content: center;
       text-decoration: none;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
-              justify-content: space-between;
-      margin-left: 0px; }
+              justify-content: space-between; }
       .main-navigation .menu-menu-container ul a {
         padding-right: 1rem; }
 
@@ -1015,8 +1031,10 @@ body.tax-product_type button.entry-readmore {
 .single .journal-title,
 .page .journal-title {
   color: #248a83;
-  font-size: 1.25rem;
-  padding: 10px; }
+  font-size: 1.5rem;
+  font-family: "Novecento";
+  font-weight: 0;
+  text-decoration: none; }
 
 .single .hentry,
 .page .hentry {
@@ -1048,6 +1066,7 @@ body.tax-product_type button.entry-readmore {
     text-align: left; }
   .single .entry-title a:link,
   .page .entry-title a:link {
+    background-color: #248a83;
     font-size: 2.1rem;
     color: white;
     text-decoration: none; }
@@ -1500,7 +1519,9 @@ object {
 
 /* --------- Journals -------------*/
 .site-content h2 {
-  text-align: center; }
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.4rem; }
 
 .latest-entries {
   width: 100%;
@@ -1547,8 +1568,12 @@ object {
     .latest-entries .journal-recent-block-item .entry-readmore {
       width: 40%;
       margin: 0.75rem;
-      padding: 0.5rem 0.75rem; }
+      padding: .75rem 0.5rem;
+      text-align: center; }
+      .latest-entries .journal-recent-block-item .entry-readmore a {
+        text-decoration: none; }
 
+/*-- Latest Adventures --*/
 .latest-adventures-container {
   width: 1120px;
   margin: 0 auto;
@@ -1575,8 +1600,8 @@ object {
         position: relative; }
       .latest-adventures-container .latest-adventures .latest-adventures-block-item .latest-adventures-wrapper img {
         position: absolute;
-        max-width: none;
-        max-height: 600px;
+        max-width: 800px;
+        height: 600px;
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
         top: 50%;

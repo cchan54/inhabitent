@@ -77,17 +77,24 @@ a {
 		justify-content: flex-start;
 	}
 
+.menu {
+	margin: 0px;
+	align-items: center;
+}
+
 	.menu-menu-container {
 		margin-left: 50rem;
 		text-align: center;
 		width: auto;
 
 	ul {
+		font-family: "Novecento";
+		font-size: 1rem;
 		width: auto;
 		list-style: none;
+		align-content: center;
 		text-decoration: none;
 		justify-content: space-between;
-		margin-left: 0px;
 		
 
 		a {

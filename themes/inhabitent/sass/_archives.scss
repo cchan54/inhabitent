@@ -14,8 +14,7 @@
 .product-header-container {
   justify-content: center;
   width: 80%;
-  margin-top: 5rem;
-  margin-left: 7rem;
+  margin: 5rem 7rem 3rem 10rem;
 
   h1 {
     text-transform: uppercase;
@@ -38,7 +37,7 @@
 }
 
 .product-tax {
-  width: 70%;
+  width: 80%;
   margin-left: 10rem;
   display: flex;
   font-family: "Novecento";
@@ -46,6 +45,15 @@
   margin-bottom: $base__space-unit * 2;
   border-bottom: 1px dashed #d1d1d1;
   padding-bottom: 2.5rem;
+  padding: 1rem;
+
+
+  .product-type-links {
+    font-family: "Novecento";
+    font-size: 1.5rem;
+    justify-content: center;
+    margin: 0px;
+  }
 
   h1 {
     text-align: center;
@@ -92,7 +100,8 @@
   border: 1px solid #d1d1d1;
   }
 
-  h2.product-title {
+  h3.product-title {
+    text-align: center;
     font-size: 1rem;
     font-family: 'Merriweather';
     font-weight: 400;

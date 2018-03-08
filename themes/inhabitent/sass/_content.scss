@@ -219,8 +219,11 @@ body.tax-product_type {
 	}
 	.journal-title {
 		color: #248a83;
-		font-size: 1.25rem;
-		padding: 10px;
+		font-size: 1.5rem;
+		font-family: "Novecento";
+		font-weight: 0;
+		text-decoration: none;
+		// padding: 10px;
 	}
 	.hentry {
 		width: 100%;
@@ -248,7 +251,7 @@ body.tax-product_type {
 			text-align: left;
 		}
 		a:link {
-			// background-color: #248a83;
+			background-color: #248a83;
 			font-size: 2.1rem;
 			color: white;
 			text-decoration: none; // padding:1rem;
